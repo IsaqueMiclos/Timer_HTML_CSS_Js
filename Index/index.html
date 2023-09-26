@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!--
+    Jesus é bom!
+-->
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Temp-Online</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="cabecalho">
+            <div id="titulo">
+                <h1>Temporizador-Online</h1>
+            </div>
+            <div id="botao-dia-noite">
+                <button id="botaoDiaNoite" onclick="modoDiaNoite()"><i class="bi bi-brightness-alt-high"></i></button>
+            </div>
+        </header>
+        <main id="timer-zone">
+            <div id="visualizador">
+                <span id="visualizar">00:00:00</span>
+            </div>
+            <div id="tempo-para-escolha">
+                <input id="hours" type="number" min="0" max="72" placeholder="Horas">
+                <input id="minutes" type="number" min="0" max="59" placeholder="Minutos">
+            </div>
+            <div id="botoes-de-interacao">
+                <button id="iniciarBtn" onclick="pegaDuracao()">Iniciar</button>
+                <button onclick="pausaTimer()">Pausar</button>
+                <button onclick="pararTimer()">Parar</button>
+            </div>
+        </main>
+        <footer id="rodape">
+            <div id="infos">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio illum quae, saepe commodi laudantium labore ducimus ipsum quibusdam architecto est, dicta cum aperiam doloremque dolorum alias id quaerat doloribus.</p>
+                <p id="copy"><i class="bi bi-c-circle"></i> Isaque Da S. Miclos</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../scripts/temporizador.js"></script>
+</body>
+
+</html>

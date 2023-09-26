@@ -1,0 +1,169 @@
+/*Formatação*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .6s;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    left: auto;
+    right: auto;
+}
+
+/*Cabeçalho*/
+
+#cabecalho {
+    margin: 30px 20px;
+    padding: 20px;
+    background-color: #457de6;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho div#titulo {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div#botao-dia-noite button{
+    padding: 10px;
+    width: 70px;
+    height: 50px;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+/*Corpo-da-página*/
+
+main#timer-zone {
+    margin: 60px auto;
+    padding: 20px;
+    width: 500px;
+    position: relative;
+    background-color: #457de6;
+    border-radius: 30px;
+}
+
+#visualizador {
+    border: 2px solid transparent;
+    padding: 20px;
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    font-size: 50pt;
+}
+
+#tempo-para-escolha {
+    margin: 5px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#tempo-para-escolha input {
+    width: 100px;
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid white;
+    background-color: #457de6;
+    color: white;
+    font-size: 14px;
+    transition: .6s;
+}
+
+#tempo-para-escolha input:hover {
+    border-color: #192d52;
+}
+
+#tempo-para-escolha input::placeholder {
+    color: #ffffff;
+}
+
+#botoes-de-interacao {
+    margin: 10px auto;
+    text-align: center;
+}
+
+#botoes-de-interacao button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: #457de6;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    width: 100px;
+    transition: .6s;
+}
+
+#botoes-de-interacao button:hover {
+    color: #457de6;
+    background-color: white;
+    border-bottom-color: #192d52;
+}
+
+/*Rodapé*/
+
+footer#rodape {
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    text-align: justify;
+    background-color: #457de6;
+}
+
+#infos {
+    color: white;
+    font-size: 12pt;
+}
+
+#infos p {
+    margin: 5px;
+}
+#copy {
+    text-align: center;
+}
+
+/*Mobile*/
+
+@media (max-width: 700px) {
+    /*Cabeçalho*/
+    
+    #cabecalho div#titulo {
+        font-size: 9px;
+    }
+
+    /*Corpo-da-página*/
+
+    main#timer-zone {
+        width: 300px;
+    }
+
+    #visualizador {
+        width: 200px;
+    }
+
+    #tempo-para-escolha input {
+        width: 50px;
+    }
+
+    #botoes-de-interacao button {
+        width: 60px;
+    }
+    
+    #visualizador {
+        font-size: 40px;
+    }
+}
